@@ -1,23 +1,191 @@
 [
   {
-    "team": "LP Thunderbolts",
+    "id": "team-02-open",
+    "team": "Team 02 - Open",
+    "division": "Softball - Minor",
     "day": "Monday",
     "field": "East",
     "start": "5:30 PM",
     "end": "7:00 PM"
   },
   {
-    "team": "LP Strikers",
+    "id": "lp-bandits-munoz-becerra",
+    "team": "LP Bandits - Munoz/Becerra",
+    "division": "Baseball - Player Pitch",
     "day": "Monday",
     "field": "East",
     "start": "7:00 PM",
     "end": "8:30 PM"
   },
   {
-    "team": "LP Coyotes",
+    "id": "lp-the-mighty-as-beltran",
+    "team": "LP The Mighty A's - Beltran",
+    "division": "Baseball - Coach/Machine",
+    "day": "Tuesday",
+    "field": "East",
+    "start": "5:30 PM",
+    "end": "7:00 PM"
+  },
+  {
+    "id": "lp-heavy-hitters-covarrubias",
+    "team": "LP Heavy Hitters - Covarrubias",
+    "division": "Baseball - Coach/Machine",
+    "day": "Wednesday",
+    "field": "East",
+    "start": "5:30 PM",
+    "end": "7:00 PM"
+  },
+  {
+    "id": "lp-coyotes-rodriguez",
+    "team": "LP Coyotes - Rodriguez",
+    "division": "Baseball - Major",
     "day": "Wednesday",
     "field": "East",
     "start": "7:00 PM",
     "end": "8:30 PM"
+  },
+  {
+    "id": "lp-red-tails-gomez-coach-machine",
+    "team": "LP Red Tails - Gomez",
+    "division": "Baseball - Coach/Machine",
+    "day": "Thursday",
+    "field": "East",
+    "start": "5:30 PM",
+    "end": "7:00 PM"
+  },
+  {
+    "id": "lp-red-tails-gomez-player-pitch",
+    "team": "LP Red Tails - Gomez",
+    "division": "Baseball - Player Pitch",
+    "day": "Thursday",
+    "field": "East",
+    "start": "7:00 PM",
+    "end": "8:30 PM"
+  },
+  {
+    "id": "lp-strikers-salas",
+    "team": "LP Strikers - Salas",
+    "division": "Baseball - Coach/Machine",
+    "day": "Monday",
+    "field": "West",
+    "start": "5:30 PM",
+    "end": "7:00 PM"
+  },
+  {
+    "id": "team-02-chris",
+    "team": "Team 02 - Chris",
+    "division": "Softball - Senior",
+    "day": "Monday",
+    "field": "West",
+    "start": "7:00 PM",
+    "end": "8:30 PM"
+  },
+  {
+    "id": "lp-pocolocas-cortez",
+    "team": "LP PocoLocas - Cortez",
+    "division": "Softball - Minor",
+    "day": "Tuesday",
+    "field": "West",
+    "start": "5:30 PM",
+    "end": "7:00 PM"
+  },
+  {
+    "id": "lp-titans-svehla",
+    "team": "LP Titans - Svehla",
+    "division": "Baseball - Player Pitch",
+    "day": "Tuesday",
+    "field": "West",
+    "start": "7:00 PM",
+    "end": "8:30 PM"
+  },
+  {
+    "id": "lp-thunderbolts-silva-dager",
+    "team": "LP Thunderbolts - Silva/Dager",
+    "division": "Baseball - Coach/Machine",
+    "day": "Wednesday",
+    "field": "West",
+    "start": "5:30 PM",
+    "end": "7:00 PM"
+  },
+  {
+    "id": "lp-dirtbags-ybarra",
+    "team": "LP Dirtbags - Ybarra",
+    "division": "Baseball - Major",
+    "day": "Wednesday",
+    "field": "West",
+    "start": "7:00 PM",
+    "end": "8:30 PM"
+  },
+  {
+    "id": "lp-diamond-girls-lugo",
+    "team": "LP Diamond Girls - Lugo",
+    "division": "Softball - Major",
+    "day": "Thursday",
+    "field": "West",
+    "start": "5:30 PM",
+    "end": "7:00 PM"
+  },
+  {
+    "id": "trinidad",
+    "team": "Trinidad",
+    "division": "Softball - Senior",
+    "day": "Thursday",
+    "field": "West",
+    "start": "7:00 PM",
+    "end": "8:30 PM"
+  },
+  {
+    "id": "lp-the-little-legends-j-garcia",
+    "team": "LP - The Little Legends - J Garcia",
+    "division": "Tee Ball",
+    "day": "Tuesday",
+    "field": "Tee Ball",
+    "start": "5:00 PM",
+    "end": "6:00 PM"
+  },
+  {
+    "id": "lp-little-rascals-valadez",
+    "team": "LP Little Rascals - Valadez",
+    "division": "Tee Ball",
+    "day": "Tuesday",
+    "field": "Tee Ball",
+    "start": "5:00 PM",
+    "end": "6:00 PM"
+  },
+  {
+    "id": "lp-pelicans-michaels-estavillo",
+    "team": "LP Pelicans - Michaels/Estavillo",
+    "division": "Tee Ball",
+    "day": "Wednesday",
+    "field": "Tee Ball",
+    "start": "5:00 PM",
+    "end": "6:00 PM"
+  },
+  {
+    "id": "lp-the-rookies-e-garcia-sifuentes",
+    "team": "LP The Rookies - E Garcia/Sifuentes",
+    "division": "Tee Ball",
+    "day": "Wednesday",
+    "field": "Tee Ball",
+    "start": "5:00 PM",
+    "end": "6:00 PM"
+  },
+  {
+    "id": "lp-los-coyotes-silva-luke",
+    "team": "LP Los Coyotes - Silva/Luke",
+    "division": "Tee Ball",
+    "day": "Thursday",
+    "field": "Tee Ball",
+    "start": "5:00 PM",
+    "end": "6:00 PM"
+  },
+  {
+    "id": "lp-las-chiquipowers-cortez-trinidad",
+    "team": "LP Las ChiquiPowers - Cortez/Trinidad",
+    "division": "Tee Ball",
+    "day": "Thursday",
+    "field": "Tee Ball",
+    "start": "5:00 PM",
+    "end": "6:00 PM"
   }
 ]

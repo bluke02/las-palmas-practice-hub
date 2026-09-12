@@ -5,8 +5,12 @@ export default function TeamFinder() {
   const [selectedTeam, setSelectedTeam] = useState("");
 
   const teamData = schedule.find(
-    (team) => team.team === selectedTeam
+    (team) => team.id === selectedTeam
   );
+  const teamCounts = schedule.reduce((counts, team) => {
+    counts[team.team] = (counts[team.team] || 0) + 1;
+    return counts;
+  }, {});
 
   return (
     <div>
@@ -24,10 +28,13 @@ export default function TeamFinder() {
 
         {schedule.map((team) => (
           <option
-            key={team.team}
-            value={team.team}
+            key={team.id}
+            value={team.id}
           >
             {team.team}
+            {teamCounts[team.team] > 1
+              ? ` - ${team.division}`
+              : ""}
           </option>
         ))}
       </select>

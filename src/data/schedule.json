@@ -1,10 +1,10 @@
 [
   {
     "id": "team-02-open",
-    "team": "Team 02 - Open",
+    "team": "Team 02 - Munoz Becerra",
     "division": "Softball - Minor",
-    "day": "Tuesday",
-    "field": "West",
+    "day": "Monday",
+    "field": "East",
     "start": "5:30 PM",
     "end": "7:00 PM"
   },
@@ -30,8 +30,8 @@
     "id": "lp-heavy-hitters-covarrubias",
     "team": "LP Heavy Hitters - Covarrubias",
     "division": "Baseball - Coach/Machine",
-    "day": "Wednesday",
-    "field": "East",
+    "day": "Thursday",
+    "field": "West",
     "start": "5:30 PM",
     "end": "7:00 PM"
   },
@@ -75,8 +75,8 @@
     "id": "team-02-chris",
     "team": "Team 02 - Chris",
     "division": "Softball - Senior",
-    "day": "Monday",
-    "field": "West",
+    "day": "Tuesday",
+    "field": "East",
     "start": "7:00 PM",
     "end": "8:30 PM"
   },
@@ -84,7 +84,7 @@
     "id": "lp-pocolocas-cortez",
     "team": "LP PocoLocas - Cortez",
     "division": "Softball - Minor",
-    "day": "Monday",
+    "day": "Wednesday",
     "field": "East",
     "start": "5:30 PM",
     "end": "7:00 PM"
@@ -102,7 +102,7 @@
     "id": "lp-thunderbolts-silva-dager",
     "team": "LP Thunderbolts - Silva/Dager",
     "division": "Baseball - Coach/Machine",
-    "day": "Wednesday",
+    "day": "Tuesday",
     "field": "West",
     "start": "5:30 PM",
     "end": "7:00 PM"
@@ -120,7 +120,7 @@
     "id": "lp-diamond-girls-lugo",
     "team": "LP Diamond Girls - Lugo",
     "division": "Softball - Major",
-    "day": "Thursday",
+    "day": "Wednesday",
     "field": "West",
     "start": "5:30 PM",
     "end": "7:00 PM"

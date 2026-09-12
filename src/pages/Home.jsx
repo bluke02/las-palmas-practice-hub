@@ -6,7 +6,9 @@ export default function Home() {
       <section className="hero">
         /logo.png
 
-        <h1>Las Palmas Practice Hub</h1>
+        <h1>
+          Las Palmas Practice Hub
+        </h1>
 
         <p>
           Fall 2026 Practice Schedules,

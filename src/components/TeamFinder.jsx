@@ -97,7 +97,7 @@ export default function TeamFinder({
       </select>
 
       {teamData && (
-        <div className="team-card" ref={scheduleRef}>
+        <div className="team-card">
           <h3>{teamData.team}</h3>
 
           <p>
@@ -117,12 +117,6 @@ export default function TeamFinder({
             <strong>Division:</strong>{" "}
             {teamData.division}
           </p>
-
-          <button
-            onClick={() => openPrintWindow(scheduleRef.current)}
-          >
-            Print Schedule
-          </button>
         </div>
       )}
     </div>

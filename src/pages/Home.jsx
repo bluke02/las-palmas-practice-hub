@@ -1,0 +1,1 @@
+import TeamFinder from '../components/TeamFinder';export default function Home(){return <div style={{padding:'2rem'}}><h1>Las Palmas Practice Hub</h1><TeamFinder/></div>}

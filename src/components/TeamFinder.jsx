@@ -1,0 +1,1 @@
+import schedule from '../data/schedule.json';export default function TeamFinder(){return <div><h2>Find My Team</h2><ul>{schedule.map(t=><li key={t.team}>{t.team} - {t.day} {t.start}</li>)}</ul></div>}

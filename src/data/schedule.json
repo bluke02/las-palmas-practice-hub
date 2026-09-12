@@ -1,0 +1,23 @@
+[
+  {
+    "team": "LP Thunderbolts",
+    "day": "Monday",
+    "field": "East",
+    "start": "5:30 PM",
+    "end": "7:00 PM"
+  },
+  {
+    "team": "LP Strikers",
+    "day": "Monday",
+    "field": "East",
+    "start": "7:00 PM",
+    "end": "8:30 PM"
+  },
+  {
+    "team": "LP Coyotes",
+    "day": "Wednesday",
+    "field": "East",
+    "start": "7:00 PM",
+    "end": "8:30 PM"
+  }
+]

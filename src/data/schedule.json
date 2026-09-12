@@ -3,8 +3,8 @@
     "id": "team-02-open",
     "team": "Team 02 - Open",
     "division": "Softball - Minor",
-    "day": "Monday",
-    "field": "East",
+    "day": "Tuesday",
+    "field": "West",
     "start": "5:30 PM",
     "end": "7:00 PM"
   },
@@ -84,8 +84,8 @@
     "id": "lp-pocolocas-cortez",
     "team": "LP PocoLocas - Cortez",
     "division": "Softball - Minor",
-    "day": "Tuesday",
-    "field": "West",
+    "day": "Monday",
+    "field": "East",
     "start": "5:30 PM",
     "end": "7:00 PM"
   },

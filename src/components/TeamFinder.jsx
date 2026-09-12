@@ -1,9 +1,12 @@
 import { useState } from "react";
 import schedule from "../data/schedule.json";
 
-export default function TeamFinder() {
-  const [selectedProgram, setSelectedProgram] = useState("");
-  const [selectedDivision, setSelectedDivision] = useState("");
+export default function TeamFinder({
+  selectedProgram,
+  selectedDivision,
+  onProgramChange,
+  onDivisionChange,
+}) {
   const [selectedTeam, setSelectedTeam] = useState("");
 
   const programs = [...new Set(schedule.map((team) => team.division.split(" - ")[0]))];
@@ -40,8 +43,7 @@ export default function TeamFinder() {
           <select
             value={selectedProgram}
             onChange={(e) => {
-              setSelectedProgram(e.target.value);
-              setSelectedDivision("");
+              onProgramChange(e.target.value);
               setSelectedTeam("");
             }}
           >
@@ -59,7 +61,7 @@ export default function TeamFinder() {
           <select
             value={selectedDivision}
             onChange={(e) => {
-              setSelectedDivision(e.target.value);
+              onDivisionChange(e.target.value);
               setSelectedTeam("");
             }}
           >

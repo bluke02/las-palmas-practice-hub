@@ -25,11 +25,20 @@ function sortSchedule(a, b) {
   return dayDifference || timeToMinutes(a.start) - timeToMinutes(b.start);
 }
 
-export default function ScheduleOverview() {
+export default function ScheduleOverview({
+  selectedProgram,
+  selectedDivision,
+}) {
   const schedulesByField = fieldOrder.map((field) => ({
     field,
     teams: schedule
-      .filter((team) => team.field === field)
+      .filter(
+        (team) =>
+          team.field === field &&
+          (!selectedProgram ||
+            team.division.startsWith(`${selectedProgram} - `)) &&
+          (!selectedDivision || team.division === selectedDivision)
+      )
       .sort(sortSchedule),
   }));
 
@@ -37,38 +46,41 @@ export default function ScheduleOverview() {
     <section className="schedule-overview" aria-labelledby="schedule-heading">
       <h2 id="schedule-heading">Recurring Practice Schedule</h2>
       <p className="schedule-intro">
-        Weekly practice assignments grouped by field.
+        Weekly practice assignments grouped by field
+        {selectedProgram || selectedDivision ? " for the selected filters." : "."}
       </p>
 
       <div className="field-schedules">
-        {schedulesByField.map(({ field, teams }) => (
-          <div className="field-schedule" key={field}>
-            <h3>{field} Field</h3>
-            <div className="schedule-table-wrapper">
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col">Day</th>
-                    <th scope="col">Time</th>
-                    <th scope="col">Team</th>
-                    <th scope="col">Division</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {teams.map((team) => (
-                    <tr key={team.id}>
-                      <td>{team.day}</td>
-                      <td>
-                        {team.start} - {team.end}
-                      </td>
-                      <td>{team.team}</td>
-                      <td>{team.division}</td>
+        {schedulesByField
+          .filter(({ teams }) => teams.length > 0)
+          .map(({ field, teams }) => (
+            <div className="field-schedule" key={field}>
+              <h3>{field} Field</h3>
+              <div className="schedule-table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">Day</th>
+                      <th scope="col">Time</th>
+                      <th scope="col">Team</th>
+                      <th scope="col">Division</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {teams.map((team) => (
+                      <tr key={team.id}>
+                        <td>{team.day}</td>
+                        <td>
+                          {team.start} - {team.end}
+                        </td>
+                        <td>{team.team}</td>
+                        <td>{team.division}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
         ))}
       </div>
     </section>

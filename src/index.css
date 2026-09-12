@@ -115,6 +115,24 @@ select {
   margin-top: 3rem;
 }
 
+.schedule-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.tab-button {
+  background: #e5edf9;
+  border: 0;
+  color: var(--lp-navy);
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background: var(--lp-blue);
+  color: white;
+}
+
 .schedule-intro {
   color: #526174;
   margin-top: -0.5rem;
@@ -171,6 +189,25 @@ tbody tr:last-child td {
 
 tbody tr:hover {
   background: #f8fbff;
+}
+
+.makeup-slots {
+  margin-top: 1.5rem;
+}
+
+.makeup-note {
+  background: #eef5ff;
+  border-left: 4px solid var(--lp-blue);
+  line-height: 1.5;
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+}
+
+.makeup-table-wrapper {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(8, 43, 99, 0.08);
+  overflow-x: auto;
 }
 
 button {

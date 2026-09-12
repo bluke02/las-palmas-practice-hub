@@ -50,3 +50,65 @@ body {
 
   box-shadow: 0 8px 30px rgba(0,0,0,.15);
 }
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 0.75rem;
+}
+
+.hero p {
+  max-width: 36rem;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+select,
+button {
+  border: 1px solid #c7d2e3;
+  border-radius: 8px;
+  font: inherit;
+  padding: 0.75rem 1rem;
+}
+
+select {
+  background: white;
+  min-width: min(100%, 20rem);
+}
+
+.team-card {
+  border-top: 1px solid #e2e8f0;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.team-card p {
+  line-height: 1.5;
+}
+
+button {
+  background: var(--lp-blue);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  background: var(--lp-navy);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}

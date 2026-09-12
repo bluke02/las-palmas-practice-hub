@@ -4,7 +4,11 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        /logo.png
+        <img
+          className="hero-logo"
+          src="/logo.png"
+          alt="Las Palmas"
+        />
 
         <h1>Las Palmas Practice Hub</h1>
 

@@ -2,27 +2,17 @@
   --lp-navy: #082b63;
   --lp-blue: #0a4ea3;
   --lp-light-blue: #69a7ff;
-  --lp-white: #ffffff;
   --lp-gray: #f5f7fa;
-  --lp-gold: #f4c542;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Inter, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   background: var(--lp-gray);
-  color: #1f2937;
 }
-
-/* HERO SECTION */
 
 .hero {
   min-height: 70vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,69 +20,33 @@ body {
 
   text-align: center;
 
-  background:
-    linear-gradient(
-      135deg,
-      var(--lp-navy),
-      var(--lp-blue),
-      var(--lp-navy)
-    );
+  background: linear-gradient(
+    135deg,
+    #082b63,
+    #0a4ea3,
+    #082b63
+  );
 
   color: white;
-
-  padding: 2rem;
 }
 
 .hero-logo {
   width: 220px;
   max-width: 90%;
-  margin-bottom: 1.5rem;
-}
-
-.hero h1 {
-  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-.hero p {
-  max-width: 700px;
-  font-size: 1.2rem;
-}
-
-/* CONTENT */
-
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   padding: 2rem;
 }
 
 .card {
   background: white;
-  border-radius: 24px;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: -60px;
 
-  padding: 1.5rem;
-
-  box-shadow:
-    0 8px 30px rgba(0,0,0,.12);
-
-  margin-bottom: 1rem;
-}
-
-button {
-  background: var(--lp-blue);
-  color: white;
-
-  border: none;
-
-  border-radius: 12px;
-
-  padding:
-    0.75rem 1.5rem;
-
-  cursor: pointer;
-}
-
-button:hover {
-  opacity: .9;
+  box-shadow: 0 8px 30px rgba(0,0,0,.15);
 }

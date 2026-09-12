@@ -1,4 +1,5 @@
 import TeamFinder from "../components/TeamFinder";
+import ScheduleOverview from "../components/ScheduleOverview";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
         <div className="card">
           <TeamFinder />
         </div>
+
+        <ScheduleOverview />
       </div>
     </>
   );

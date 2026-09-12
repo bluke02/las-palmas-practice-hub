@@ -92,6 +92,68 @@ select {
   line-height: 1.5;
 }
 
+.schedule-overview {
+  margin-top: 3rem;
+}
+
+.schedule-intro {
+  color: #526174;
+  margin-top: -0.5rem;
+}
+
+.field-schedules {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.field-schedule {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(8, 43, 99, 0.08);
+  overflow: hidden;
+}
+
+.field-schedule h3 {
+  background: var(--lp-navy);
+  color: white;
+  margin: 0;
+  padding: 1rem 1.25rem;
+}
+
+.schedule-table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 700px;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.85rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: var(--lp-navy);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+tbody tr:hover {
+  background: #f8fbff;
+}
+
 button {
   background: var(--lp-blue);
   color: white;

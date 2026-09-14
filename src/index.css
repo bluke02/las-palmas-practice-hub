@@ -117,6 +117,7 @@ select {
 
 .schedule-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 3rem;
 }
@@ -208,6 +209,13 @@ tbody tr:hover {
   border-radius: 16px;
   box-shadow: 0 4px 18px rgba(8, 43, 99, 0.08);
   overflow-x: auto;
+}
+
+.empty-schedule {
+  background: white;
+  border-radius: 16px;
+  color: #526174;
+  padding: 1.5rem;
 }
 
 button {

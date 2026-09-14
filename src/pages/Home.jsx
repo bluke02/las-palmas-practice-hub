@@ -2,6 +2,7 @@ import { useState } from "react";
 import TeamFinder from "../components/TeamFinder";
 import ScheduleOverview from "../components/ScheduleOverview";
 import MakeupSlots from "../components/MakeupSlots";
+import GameSchedule from "../components/GameSchedule";
 
 export default function Home() {
   const [selectedProgram, setSelectedProgram] = useState("");
@@ -56,10 +57,23 @@ export default function Home() {
           >
             Makeup Slots
           </button>
+          <button
+            className={activeTab === "games" ? "tab-button active" : "tab-button"}
+            onClick={() => setActiveTab("games")}
+            role="tab"
+            aria-selected={activeTab === "games"}
+          >
+            Game Schedule
+          </button>
         </div>
 
         {activeTab === "schedule" ? (
           <ScheduleOverview
+            selectedProgram={selectedProgram}
+            selectedDivision={selectedDivision}
+          />
+        ) : activeTab === "games" ? (
+          <GameSchedule
             selectedProgram={selectedProgram}
             selectedDivision={selectedDivision}
           />

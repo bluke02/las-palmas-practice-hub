@@ -7,6 +7,7 @@ import GameSchedule from "../components/GameSchedule";
 export default function Home() {
   const [selectedProgram, setSelectedProgram] = useState("");
   const [selectedDivision, setSelectedDivision] = useState("");
+  const [selectedTeam, setSelectedTeam] = useState("");
   const [activeTab, setActiveTab] = useState("schedule");
 
   return (
@@ -31,11 +32,17 @@ export default function Home() {
           <TeamFinder
             selectedProgram={selectedProgram}
             selectedDivision={selectedDivision}
+            selectedTeam={selectedTeam}
             onProgramChange={(program) => {
               setSelectedProgram(program);
               setSelectedDivision("");
+              setSelectedTeam("");
             }}
-            onDivisionChange={setSelectedDivision}
+            onDivisionChange={(division) => {
+              setSelectedDivision(division);
+              setSelectedTeam("");
+            }}
+            onTeamChange={setSelectedTeam}
           />
         </div>
 
@@ -70,11 +77,13 @@ export default function Home() {
           <ScheduleOverview
             selectedProgram={selectedProgram}
             selectedDivision={selectedDivision}
+            selectedTeam={selectedTeam}
           />
         ) : activeTab === "games" ? (
           <GameSchedule
             selectedProgram={selectedProgram}
             selectedDivision={selectedDivision}
+            selectedTeam={selectedTeam}
           />
         ) : (
           <MakeupSlots />

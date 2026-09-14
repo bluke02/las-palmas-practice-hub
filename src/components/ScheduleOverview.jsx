@@ -28,6 +28,7 @@ function sortSchedule(a, b) {
 export default function ScheduleOverview({
   selectedProgram,
   selectedDivision,
+  selectedTeam,
 }) {
   const schedulesByField = fieldOrder.map((field) => ({
     field,
@@ -35,6 +36,7 @@ export default function ScheduleOverview({
       .filter(
         (team) =>
           team.field === field &&
+          (!selectedTeam || team.id === selectedTeam) &&
           (!selectedProgram ||
             team.division.startsWith(`${selectedProgram} - `)) &&
           (!selectedDivision || team.division === selectedDivision)

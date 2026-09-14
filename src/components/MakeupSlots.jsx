@@ -10,9 +10,9 @@ const makeupSlots = [
     field: "Tee Ball Field",
   },
   {
-    day: "Tuesday",
+    day: "Monday",
     time: "7:00 PM - 8:30 PM",
-    field: "East Field",
+    field: "West Field",
   },
 ];
 

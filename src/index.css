@@ -218,6 +218,12 @@ tbody tr:hover {
   padding: 1.5rem;
 }
 
+.pending-schedule {
+  color: #526174;
+  font-style: italic;
+  margin-top: 1.5rem;
+}
+
 button {
   background: var(--lp-blue);
   color: white;

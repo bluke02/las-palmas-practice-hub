@@ -1,14 +1,13 @@
-import { useState } from "react";
 import schedule from "../data/schedule.json";
 
 export default function TeamFinder({
   selectedProgram,
   selectedDivision,
+  selectedTeam,
   onProgramChange,
   onDivisionChange,
+  onTeamChange,
 }) {
-  const [selectedTeam, setSelectedTeam] = useState("");
-
   const programs = [...new Set(schedule.map((team) => team.division.split(" - ")[0]))];
   const divisions = [
     ...new Set(
@@ -27,7 +26,6 @@ export default function TeamFinder({
         team.division.startsWith(`${selectedProgram} - `)) &&
       (!selectedDivision || team.division === selectedDivision)
   );
-  const teamData = filteredSchedule.find((team) => team.id === selectedTeam);
   const teamCounts = schedule.reduce((counts, team) => {
     counts[team.team] = (counts[team.team] || 0) + 1;
     return counts;
@@ -44,7 +42,7 @@ export default function TeamFinder({
             value={selectedProgram}
             onChange={(e) => {
               onProgramChange(e.target.value);
-              setSelectedTeam("");
+              onTeamChange("");
             }}
           >
             <option value="">All Programs</option>
@@ -62,7 +60,7 @@ export default function TeamFinder({
             value={selectedDivision}
             onChange={(e) => {
               onDivisionChange(e.target.value);
-              setSelectedTeam("");
+              onTeamChange("");
             }}
           >
             <option value="">All Divisions</option>
@@ -77,7 +75,7 @@ export default function TeamFinder({
 
       <select
         value={selectedTeam}
-        onChange={(e) => setSelectedTeam(e.target.value)}
+        onChange={(e) => onTeamChange(e.target.value)}
       >
         <option value="">
           Select Your Team
@@ -95,30 +93,6 @@ export default function TeamFinder({
           </option>
         ))}
       </select>
-
-      {teamData && (
-        <div className="team-card">
-          <h3>{teamData.team}</h3>
-
-          <p>
-            <strong>Day:</strong> {teamData.day}
-          </p>
-
-          <p>
-            <strong>Time:</strong>{" "}
-            {teamData.start} - {teamData.end}
-          </p>
-
-          <p>
-            <strong>Field:</strong> {teamData.field}
-          </p>
-
-          <p>
-            <strong>Division:</strong>{" "}
-            {teamData.division}
-          </p>
-        </div>
-      )}
     </div>
   );
 }

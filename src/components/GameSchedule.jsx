@@ -1,4 +1,5 @@
 import games from "../data/games.json";
+import schedule from "../data/schedule.json";
 
 function formatDate(date) {
   return new Intl.DateTimeFormat("en-US", {
@@ -8,12 +9,24 @@ function formatDate(date) {
   }).format(new Date(`${date}T12:00:00`));
 }
 
-export default function GameSchedule({ selectedProgram, selectedDivision }) {
+export default function GameSchedule({
+  selectedProgram,
+  selectedDivision,
+  selectedTeam,
+}) {
+  const selectedTeamName = schedule.find(
+    (team) => team.id === selectedTeam
+  )?.team;
   const gamesForView =
     !selectedProgram ||
     selectedProgram === "Tee Ball" ||
     selectedDivision === "Tee Ball"
-      ? games
+      ? games.filter(
+          ([, , , home, away]) =>
+            !selectedTeamName ||
+            home === selectedTeamName ||
+            away === selectedTeamName
+        )
       : [];
 
   return (

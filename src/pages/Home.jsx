@@ -18,12 +18,11 @@ export default function Home() {
           alt="Las Palmas"
         />
 
-        <h1>Las Palmas Practice Hub</h1>
+        <h1>Las Palmas Schedule Hub</h1>
 
         <p>
-          Fall 2026 Practice Schedules,
-          Team Information,
-          and Field Assignments.
+          Fall 2026 practice and game schedules,
+          team information, and field assignments.
         </p>
       </section>
 
